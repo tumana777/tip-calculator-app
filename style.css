@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body {
+    background-color: #C5E4E7;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 920px;
+    height: 481px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    display: flex;
+}
+
+.inputs {
+    width: 379px;
+    height: 388px;
+    margin: 45px 48px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+label,
+.rates {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+}
+
+.icon-dollar,
+.icon-person {
+    position: absolute;
+    left: 17px;
+    top: 46px;
+}
+
+input {
+    font-family: 'Space Mono', monospace;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 100%;
+    height: 48px;
+    margin-top: 6px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #00474B;
+    background-color: #F3F9FA;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#bill-amount:hover,
+#people-amount:hover {
+    border: 2px solid #26C2AE;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-family: 'Space Mono', monospace;
+    color: #00474B;
+    opacity: 0.35;
+}
+
+.tip-rates {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 16px;
+    flex-wrap: wrap;
+}
+
+.tip-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 117px;
+    height: 48px;
+    background-color: #00474B;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.active {
+    background-color: #26C2AE;
+}
+
+.tip-rates input {
+    margin: 0;
+    padding: 6px 13px;
+    background-color: #F3F9FA;
+    color: #00474B;
+}
+
+.tip-rates input::placeholder {
+    color: #547878;
+    font-family: 'Space Mono', monospace;
+    opacity: 1;
+}
+
+.tip-rate:hover {
+    background: #9FE8DF;
+    cursor: pointer;
+    color: #00474B;
+}
+
+.tip-rates input:hover {
+    background: #F3F9FA;
+    border: 2px solid #26C2AE;
+}
+
+.outputs {
+    padding: 40px;
+    margin-top: 32px;
+    width: 413px;
+    height: 417px;
+    background: #00474B;
+    border-radius: 15px;
+}
+
+.tip-amount,
+.total-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-amount {
+    margin-top: 25px;
+    margin-bottom: 122px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+span {
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+}
+
+.result {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -1px;
+    color: #26C2AE;
+}
+
+button {
+    width: 100%;
+    height: 48px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Space Mono', monospace;
+    color: #00474B;
+    opacity: 0.35;
+    background-color: #0D686D;
+    border-radius: 5px;
+    border: none;
+}
+
+.reset-btn {
+    background-color: #26C2AE;
+    opacity: 1;
+}
+
+.reset-btn:hover {
+    background-color: #9FE8DF;
+    cursor: pointer;
+    opacity: 1;
+}
